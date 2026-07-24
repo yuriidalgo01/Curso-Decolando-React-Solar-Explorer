@@ -9,19 +9,23 @@ export default function PaginaInicio() {
         
         <Stack
 
-        direction = "column"
-        spacing = {2}
+        
+        direction="column"
+        spacing={2}
         sx={{
+            display: "flex",
+            alignItems : "center",
+            textAlign: "center,",
             justifyContent: "center",
-            alignItems: "center",
+            minHeight: "100vh", // Corrigido de 'hight' para 'minHeight'
         }}
         >
         
         
 
-            <Typography variant = "h2" component = "h1">Conheça os planetas do Sistema Solar!</Typography>
+            <Typography variant = "h3" component = "h1" textAlign = "center">Conheça os planetas do Sistema Solar!</Typography>
 
-            <img className = "efeito-flutuante"
+            <img className = "animacaoEfeitoFlutuante"
             src = "/img/astronauta.png"
             alt = "Astronalta Flutuando no Espaço"
             />

@@ -1,0 +1,30 @@
+body {
+    background-image: linear-gradient(to bottom right, #722da0, #e5b7f3);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin: 0px;
+
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.animacaoEfeitoFlutuante{
+    animation: animacaoEfeitoFlutuante 5s ease-in-out infinite;
+
+}
+
+@keyframes animacaoEfeitoFlutuante{
+    0%, 100%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-20px);
+    }
+}
