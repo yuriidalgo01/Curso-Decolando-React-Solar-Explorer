@@ -1,0 +1,12 @@
+export default function PaginaPlanetas() {
+    return (<>
+        <Container maxWidth = "x1">
+
+        <Typography variant = "h2" component = "h1" textAlign = "center">
+            Planetas do Sistema Solar!
+        </Typography>
+</Container>
+
+    </>);
+
+}

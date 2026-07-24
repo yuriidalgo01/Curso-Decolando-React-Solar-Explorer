@@ -1,6 +1,7 @@
 import { Card, CardContent, Container, Grid, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
+
 export default function PaginaPlanetas() {
     return (<>
 
