@@ -24,3 +24,4 @@ yarn-error.log*
 
 # * é um curringa para ignorar qualquer coisa que termine com -lock.json, como package-lock.json ou yarn.lock
 *-lock.json
+*-exemplo_pg.txt
