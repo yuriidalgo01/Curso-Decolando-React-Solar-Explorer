@@ -17,7 +17,7 @@ export default function PaginaPlaneta() {
     }
 
     return (<>
-        <Container maxWidth = "x1">
+        <Container maxWidth = "x1" className="containerMargin">
 
             <Link to = "/planetas">
                 <Button variant="outlined" size = "large"><ArrowBackIosNewIcon />Voltar</Button>
@@ -32,8 +32,7 @@ export default function PaginaPlaneta() {
                     alignItems: "center",
                 }}>
         
-
-                <img className = "girar" src = "" alt = "" width = "100%" />
+                <img className = "animacaoEfeitoGirar" src = "/img/astronauta.png" alt = ""/>
                 <Typography variant = "h5" component = "h1" textAlign = "center">Planeta</Typography>
                 <Typography variant = "body1" component = "p" textAlign = "center">Descrição do planeta</Typography>
                 

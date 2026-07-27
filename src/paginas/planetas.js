@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 export default function PaginaPlanetas() {
     return (<>
 
-<Container maxWidth = "x1">
+<Container maxWidth = "x1" className="containerMargin">
 
-        <Typography variant = "h2" component = "h1" textAlign = "center" pt={2}>
+        <Typography variant = "h2" component = "h1" textAlign = "center" >
             Planetas do Sistema Solar!
         </Typography>
 
@@ -25,7 +25,6 @@ export default function PaginaPlanetas() {
             <Card className = "cardVidro">
                 <Link to = "/planeta/teste">
                     <CardContent>
-                        <img src = "" alt = "" width = "100%" />
                         <Typography variant = "h5" component = "h2" textAlign = "center">
                         Terra 1
                         </Typography>

@@ -15,6 +15,9 @@ a{
     text-decoration: none;
 }
 
+.containerMargin{
+    margin-top: 2rem;
+} 
 
 .cardVidro{
     background-color: unset! important;
@@ -28,11 +31,25 @@ a{
 
 }
 
+.animacaoEfeitoGirar{
+    animation: animacaoEfeitoGirar 30s linear infinite;
+
+}   
+
 @keyframes animacaoEfeitoFlutuante{
     0%, 100%{
         transform: translateY(0);
     }
     50%{
         transform: translateY(-20px);
+    }
+}
+
+@keyframes animacaoEfeitoGirar{
+    0%{
+       transform: rotate(0); 
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
