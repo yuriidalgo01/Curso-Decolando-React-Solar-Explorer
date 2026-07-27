@@ -7,13 +7,13 @@ export default function PaginaPlanetas() {
 
 <Container maxWidth = "x1">
 
-        <Typography variant = "h2" component = "h1" textAlign = "center">
+        <Typography variant = "h2" component = "h1" textAlign = "center" pt={2}>
             Planetas do Sistema Solar!
         </Typography>
 
         <Grid
           container
-          spacing = {2} marginTop = {2}
+          spacing = {2} pt = {2}
         >
            {/* XS = 2 item */}
            {/* SM = 3 item */}
@@ -22,7 +22,7 @@ export default function PaginaPlanetas() {
            {/* XL = 6 item */} 
 
           <Grid item xs = {6} sm = {4} md = {3} lg = {2} xl = {2}>
-            <Card>
+            <Card className = "cardVidro">
                 <Link to = "/planeta/teste">
                     <CardContent>
                         <img src = "" alt = "" width = "100%" />
