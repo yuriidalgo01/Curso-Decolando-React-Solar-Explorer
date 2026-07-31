@@ -1,57 +1,40 @@
 import { Card, CardContent, CircularProgress, Container, Grid, Typography } from "@mui/material";
+import { useState } from "react";
 import { Link } from "react-router-dom";
+import ComponenteLayoutPadrao from "../componentes/layout/padrao";
 
 
 export default function PaginaPlanetas() {
 
-    const [ carregando, setCarregando ] = useState(true);
+    const [carregando, setCarregando] = useState(true);
 
+    return (<ComponenteLayoutPadrao carregando = {carregando}>
 
+        <Container maxWidth = "x1" className="containerMargin">
+            <Typography variant = "h2" component = "h1" textAlign = "center" >
+                Planetas do Sistema Solar!
+            </Typography>
 
-    return (<>
+            <Grid container spacing = {2} pt = {2}>
+                {/* XS = 2 item */}
+                {/* SM = 3 item */}
+                {/* MD = 4 item*/}
+                {/* LG = 5 item*/}
+                {/* XL = 6 item */} 
 
-    <Container maxWidth = "x1" className="containerMargin">
+                <Grid item xs = {6} sm = {4} md = {3} lg = {2} xl = {2}>
+                    <Card className = "cardVidro">
+                        <Link to = "/planeta/teste">
+                            <CardContent>
+                                <Typography variant = "h5" component = "h2" textAlign = "center">
+                                Terra 1
+                                </Typography>
+                            </CardContent>
+                        </Link>
+                    </Card>
+                </Grid>
+            </Grid>
+        </Container>
 
-        {
-            (carregando === true) ? (<>
-            
-            <CircularProgress size = {100} />
-
-            </>) : (<>
-            
-
-
-        <Typography variant = "h2" component = "h1" textAlign = "center" >
-            Planetas do Sistema Solar!
-        </Typography>
-
-        <Grid
-          container
-          spacing = {2} pt = {2}
-        >
-           {/* XS = 2 item */}
-           {/* SM = 3 item */}
-           {/* MD = 4 item*/}
-           {/* LG = 5 item*/}
-           {/* XL = 6 item */} 
-
-          <Grid item xs = {6} sm = {4} md = {3} lg = {2} xl = {2}>
-            <Card className = "cardVidro">
-                <Link to = "/planeta/teste">
-                    <CardContent>
-                        <Typography variant = "h5" component = "h2" textAlign = "center">
-                        Terra 1
-                        </Typography>
-                    </CardContent>
-                </Link>
-            </Card>
-          </Grid>
-        </Grid>
-
-    
-            </>)
-
-        }
-    </Container>
-    </>)
+    </ComponenteLayoutPadrao>)
 }

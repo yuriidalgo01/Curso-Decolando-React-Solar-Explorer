@@ -6,6 +6,10 @@ const tema = createTheme({
             main: "#EEC429",
             //contrastText: "",
 
+        },
+        white:{
+            main: "#fff"
+
         }
         
     },

@@ -1,18 +1,13 @@
-import { CircularProgress } from "@mui/material";
-import ComponenteLayoutMsg from "./msg";
-
 export default function ComponenteLayoutPadrao(props) {
     return(
         <>
         {
             (props?.carregando === true) ? (<>
-                <ComponenteLayoutMsg icone = {<CircularProgress size={100} color = "white"/>} titulo = {"Carregando ..."}/>
             </>) : (<>
             {
              (props?.erro) ? (<>
-                {/*<ComponenteLayoutMsg icone = {} titulo = {} subtitulo = {} btnTenteNovamente = {true}/>*/}
              </>) : (<>
-             {(props?.msg) ? (<>
+             {(pops?.msg) ? (<>
              </>) : (<>
                 {props.children}
              </>)
