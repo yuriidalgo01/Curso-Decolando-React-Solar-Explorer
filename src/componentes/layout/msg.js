@@ -11,7 +11,8 @@ export default function ComponenteLayoutMsg(props){
 
                     {props?.icone}  {/*recebimento de icone*/}
                     <Typography variant ="h4" component = "h1" textAlign = "center">{props?.titulo}</Typography>
-                    <Typography variant ="subtitle1" component = "h1" textAlign = "center">{props?.subtitulo}</Typography>
+                    <Typography variant ="subtitle1" component = "p" textAlign = "center">{props?.subtitulo}</Typography>
+                    <Typography variant ="body1" component = "p" textAlign = "center">{props?.descricao}</Typography>
 
                     {props.children}
 

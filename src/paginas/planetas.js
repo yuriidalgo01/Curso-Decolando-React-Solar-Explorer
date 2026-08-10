@@ -1,14 +1,30 @@
-import { Card, CardContent, CircularProgress, Container, Grid, Typography } from "@mui/material";
-import { useState } from "react";
+import { Card, CardContent, Container, Grid, Typography } from "@mui/material";
+import { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import ComponenteLayoutPadrao from "../componentes/layout/padrao";
+import ApiPlanetas from "../api/planetas/apiPlanetas";
 
 
 export default function PaginaPlanetas() {
 
-    const [carregando, setCarregando] = useState(true);
+    const [carregando, setCarregando] = useState(false);
+    const [erro, setErro] = useState(null);
+    const [msg, setMsg] = useState(null);
 
-    return (<ComponenteLayoutPadrao carregando = {carregando}>
+
+    // Função qque executa quando é aberta a página
+    useEffect(() => {
+        (async () => {
+
+            let resposta = await ApiPlanetas.obterTodos();
+
+            console.log("Resposta da API: ");
+            setCarregando(true);
+
+        })()
+        }, [])
+
+    return (<ComponenteLayoutPadrao carregando = {carregando} erro = {erro} msg = {msg}>
 
         <Container maxWidth = "x1" className="containerMargin">
             <Typography variant = "h2" component = "h1" textAlign = "center" >
