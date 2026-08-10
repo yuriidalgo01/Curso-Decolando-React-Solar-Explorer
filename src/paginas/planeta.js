@@ -33,8 +33,8 @@ export default function PaginaPlaneta() {
                 }}>
         
                 <img className = "animacaoEfeitoGirar" src = "/img/astronauta.png" alt = ""/>
-                <Typography variant = "h5" component = "h1" textAlign = "center">Planeta</Typography>
-                <Typography variant = "body1" component = "p" textAlign = "center">Descrição do planeta</Typography>
+                <Typography variant = "h5" component = "h1" align = "center">Planeta</Typography>
+                <Typography variant = "body1" component = "p" align = "center">Descrição do planeta</Typography>
                 
                 <Button variant="contained" size = "large" onClick={()=>{ClickCompartilhar();}}><ShareIcon />Compartilhar</Button>
 
