@@ -16,7 +16,8 @@ a{
 }
 
 .containerMargin{
-    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 } 
 
 .cardVidro{

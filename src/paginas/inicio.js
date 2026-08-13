@@ -31,7 +31,9 @@ export default function PaginaInicio() {
             />
 
             <Link to = "/planetas">
-                <Button variant="contained" size = "large">Vamos explorar!<ArrowForwardIosIcon /></Button>
+                <Button variant="contained" size = "large" endIcon={<ArrowForwardIosIcon />}>
+                    Vamos explorar!
+                </Button>
             </Link>
 
 
