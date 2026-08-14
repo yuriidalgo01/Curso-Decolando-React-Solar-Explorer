@@ -7,8 +7,11 @@ import ApiPlanetas from "../api/planetas/apiPlanetas";
 export default function PaginaPlanetas() {
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState(null);
-    const [msg, setMsg] = useState(null);
     const [planetas, setPlanetas] = useState([]);
+    
+    // eslint-disable-next-line
+    const [msg, setMsg] = useState(null);
+
 
     useEffect(() => {
         (async () => {

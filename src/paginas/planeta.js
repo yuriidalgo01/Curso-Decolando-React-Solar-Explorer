@@ -11,8 +11,9 @@ export default function PaginaPlaneta() {
 
     const [carregando, setCarregando] = useState(true);
     const [erro, setErro] = useState(null);
-    const [msg, setMsg] = useState(null);
     const [planeta, setPlaneta] = useState(null);
+    // eslint-disable-next-line
+    const [msg, setMsg] = useState(null);
 
     useEffect(() => {
         (async () => {
