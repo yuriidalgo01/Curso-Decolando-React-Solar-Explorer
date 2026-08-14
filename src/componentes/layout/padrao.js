@@ -7,7 +7,7 @@ export default function ComponenteLayoutPadrao(props) {
         <>
         {
             (props?.carregando === true) ? (<>
-                <ComponenteLayoutMsg icone = {<CircularProgress size={100} color = "white"/>} titulo = {"Carregando ..."} />
+                <ComponenteLayoutMsg icone = {<CircularProgress size={"100%"} color = "white"/>} titulo = {"Carregando ..."} />
             </>) : (<>
             {
              (props?.erro) ? (<>

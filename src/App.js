@@ -16,7 +16,7 @@ export default function App() {
 
         <Route path="/planetas" element={<PaginaPlanetas />} />
         
-        <Route path="/planeta/:slug" element={<PaginaPlaneta />} />
+        <Route path="/apiPlanetas/:slug" element={<PaginaPlaneta />} />
 
       </Routes>
     </BrowserRouter>

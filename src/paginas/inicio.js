@@ -23,7 +23,7 @@ export default function PaginaInicio() {
         
         
 
-            <Typography variant = "h3" component = "h1" textAlign = "center">Conheça os planetas do Sistema Solar!</Typography>
+            <Typography variant = "h3" component = "h1" align= "center">Conheça os planetas do Sistema Solar!</Typography>
 
             <img className = "animacaoEfeitoFlutuante"
             src = "/img/astronauta.png"
