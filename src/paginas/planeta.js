@@ -44,12 +44,19 @@ export default function PaginaPlaneta() {
         })();
     }, [parametros.slug]); // Dependência atualizada
 
-    function ClickCompartilhar() {
+    async function ClickCompartilhar() {
+        let resImg = await fetch(planeta?.imgUrl);
+        let contentType = resImg.headers.get("content-type");
+        let blob = await resImg.blob();
+        let binaryFile = new File([blob], `${planeta?.slug}-${planeta?.img}` , { type: contentType });
+        
+        
         if (navigator.share) {
             navigator.share({
                 url: window.location.href,
                 text: `Explore o planeta ${planeta?.nome || ""} e descubra suas características.`,
-                title: `Conheça ${planeta?.nome || "este planeta"}`
+                title: `Conheça ${planeta?.nome || "este planeta"}`,
+                files: Array(binaryFile)
             }).catch((err) => console.log("Compartilhamento cancelado:", err));
         } else {
             // Fallback caso o navegador não suporte Web Share API
