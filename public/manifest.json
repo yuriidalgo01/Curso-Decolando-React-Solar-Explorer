@@ -1,6 +1,30 @@
 {
   "short_name": "Solar Explorer",
   "name": "Solar Explorer",
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#7733a3",
+  "background_color": "#7733a3",
+  "description": "Aplicativo que busca explorar os informações básicas dos planetas do nosso sistema solar de forma divertida e interativa.",
+  "lang": "pt",
+  "orientation": "any",
+  "categories": [
+    "education",
+    "entertainment",
+    "kids"
+  ],
+  "screenshots": [
+    {
+      "src": "/img/screenshots/screenshot1.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    },
+    {
+      "src": "/img/screenshots/screenshot2.png",
+      "sizes": "540x720",
+      "type": "image/png"
+    }
+  ],
   "icons": [
     {
       "src": "/img/iconSolarExplorer.icon",
@@ -17,9 +41,5 @@
       "type": "image/png",
       "sizes": "512x512"
     }
-  ],
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#8746AF",
-  "background_color": "#8746AF"
+  ]
 }
