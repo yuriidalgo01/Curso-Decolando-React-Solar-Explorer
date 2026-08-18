@@ -1,4 +1,5 @@
-import { Card, CardActionArea, CardContent, Container, Grid, Typography } from "@mui/material";
+import { Card, CardActionArea, CardContent, Container, Grid, Typography, Button, } from "@mui/material";
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ComponenteLayoutPadrao from "../componentes/layout/padrao";
@@ -34,6 +35,19 @@ export default function PaginaPlanetas() {
         <ComponenteLayoutPadrao carregando={carregando} erro={erro} msg={msg}>
             {/* Corrigido para "xl" com L */}
             <Container maxWidth="xl" className="containerMargin">
+
+                {/* Botão integrado diretamente com o React Router */}
+                <Button 
+                    component={Link} 
+                    to="/" 
+                    variant="outlined" 
+                    size="large" 
+                    startIcon={<ArrowBackIosNewIcon />}
+                    sx={{ mb: 3 }}
+                >
+                    Voltar
+                </Button>
+
                 <Typography variant="h2" component="h1" align="center">
                     Planetas do Sistema Solar!
                 </Typography>
